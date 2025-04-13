@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perfil Social - VitrineWeb</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f43f5e, #f97316);
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile-container {
+      background: #fff;
+      border-radius: 20px;
+      max-width: 600px; /* Aumentado */
+      width: 95%;
+      padding: 30px 25px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .cover {
+      width: 100%;
+      height: 200px;
+      background: url('img/banner.png') center center / cover no-repeat;
+      border-radius: 16px 16px 0 0;
+      position: relative;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      position: absolute;
+      top: 75px;
+      left: 50%;
+      transform: translateX(-50%);
+      object-fit: cover;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .info {
+      margin-top: 50px;
+    }
+
+    .info h2 {
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .info p {
+      color: #666;
+      font-size: 1.05rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-btn {
+      background-color: #f43f5e;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 14px rgba(244, 63, 94, 0.4);
+    }
+
+    .contact-btn:hover {
+      background-color: #d6223d;
+      transform: scale(1.05);
+    }
+
+    .socials {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .socials a {
+      color: #f43f5e;
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .socials a:hover {
+      transform: scale(1.2);
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+        top: 60px;
+      }
+
+      .info {
+        margin-top: 75px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-container">
+    <div class="cover"></div>
+    <img src="img/logo1.png" alt="Foto de Perfil" class="profile-pic" />
+    <div class="info">
+      <h2>Higor Martins</h2>
+      <p>Desenvolvedor de ideias criativas, apaixonado por tecnologia e projetos digitais.</p>
+      <button class="contact-btn"><i class="fas fa-envelope"></i> Entrar em contato</button>
+    </div>
+    <div class="socials">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+      <a href="#"><i class="fas fa-globe"></i></a>
+    </div>
+    <div class="footer">© 2025 VitrineWeb • Todos os direitos reservados</div>
+  </div>
+
+</body>
+</html>
